@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 load_dotenv()
-client = OpenAI()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 MODEL = "gpt-4o"
 
@@ -16,7 +16,7 @@ def run_agent(system: str, user: str) -> str:
     )
     return resp.choices[0].message.content
 
-def creative_agent(context: str) -> str:
+def creative_agent(context: str, husband_name: str) -> str:
     return run_agent(
         "You are a poetic, opera-inspired creative assistant. Write warm, grounded, sincere output.",
         f"""Context:
@@ -25,6 +25,9 @@ def creative_agent(context: str) -> str:
 Deliver:
 1) A short romantic lyric (8–12 lines)
 2) A love note from husband (6–10 sentences)
+   - End the love note with:
+     With all my love,
+     {husband_name}
 3) A short IG/FB caption (1–2 lines)""",
     )
 

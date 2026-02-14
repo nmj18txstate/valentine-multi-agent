@@ -8,6 +8,12 @@ load_dotenv()
 st.set_page_config(page_title="Valentine Copilot", page_icon="💝")
 st.title("💝 Valentine Copilot (Multi-Agent)")
 
+# Add name input
+husband_name = st.text_input(
+    "Your name (for the love note signature)",
+    value="Nityam Jigyasu"
+)
+
 context = st.text_area(
     "Context (edit this to personalize)",
     value=("Wife: opera singer, ADHD, creative, recently growing her YouTube.\n"
@@ -22,7 +28,8 @@ if st.button("Generate"):
         st.stop()
 
     with st.spinner("Creating…"):
-        c = creative_agent(context)
+        # Pass name to creative agent
+        c = creative_agent(context, husband_name)
         r = regulation_agent(context)
         p = partner_support_agent(context)
 
