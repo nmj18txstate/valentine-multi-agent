@@ -1,4 +1,6 @@
-# 💝 Valentine Copilot (Multi-Agent Streamlit App)
+# 💝 Valentine Copilot (Multi-Agent Streamlit App) 
+Design Philosophy: This project demonstrates role-specialized prompt orchestration rather than tool-based agents. 
+Each agent operates with a clearly scoped behavioral contract and isolated system prompt.
 A lightweight multi-agent AI application built with **Streamlit + OpenAI**, designed to generate:
 - 🎶 Romantic lyrics & heartfelt love notes  
 - 🌿 Trauma-aware ADHD-friendly Valentine plans  
@@ -49,7 +51,7 @@ OPENAI_API_KEY=your_key_here
 # 5️. Run Locally
 streamlit run app.py
 
-🌍 Deployment
+🌍 Deployment:
 This app is deployable on:
 Streamlit Community Cloud
 Docker (future enhancement)
