@@ -24,7 +24,7 @@ This project demonstrates a simple **multi-agent orchestration pattern** using s
 - Non-fixing emotional support strategies
 - Support ideas for the husband as well
 ---
-# 🏗 Architecture
+# Architecture
 Streamlit UI -> App Layer (app.py) -> Specialized Agents (agents.py) -> OpenAI GPT-4o Model
 
 Each agent has:
@@ -32,7 +32,7 @@ Each agent has:
 - A clear behavioral role
 - Context-aware generation
 ---
-## ⚙️ Setup
+##  Setup
 # 1. Clone the Repository
 git clone https://github.com/your-username/valentine-multi-agent.git
 cd valentine-multi-agent
@@ -51,34 +51,34 @@ OPENAI_API_KEY=your_key_here
 # 5️. Run Locally
 streamlit run app.py
 
-🌍 Deployment:
+Deployment:
 This app is deployable on:
 Streamlit Community Cloud
 Docker (future enhancement)
 Cloud platforms (AWS / GCP / Azure)
 
-🔮 Future Roadmap
+Future Roadmap:
 This project currently uses a simple role-based orchestration model.
 Future enhancements may include:
-🧠 ADK (Agent Development Kit)
+-ADK (Agent Development Kit)
 Structured agent lifecycle management
 Tool integration
 Memory persistence
 Observability & tracing
 
-🔁 A2A (Agent-to-Agent Communication)
+-A2A (Agent-to-Agent Communication)
 Agents collaborating directly
 Context sharing across agents
 Task delegation patterns
 Multi-step reasoning workflows
 
-🔗 MCP (Model Context Protocol)
+-MCP (Model Context Protocol)
 External knowledge injection
 Context streaming
 Tool and data connectors
 Structured system prompt governance
 
-📦 Additional Enhancements
+-Additional Enhancements
 Persistent memory per user
 PDF export of love note
 Structured section rendering
