@@ -57,8 +57,8 @@ Streamlit Community Cloud
 Docker (future enhancement)
 Cloud platforms (AWS / GCP / Azure)
 
-Future Roadmap:
-This project currently uses a simple role-based orchestration model.
+Future Roadmap: This project currently uses a simple role-based orchestration model.
+
 Future enhancements may include:
 -ADK (Agent Development Kit)
 Structured agent lifecycle management
